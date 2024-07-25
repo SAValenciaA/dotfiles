@@ -1,0 +1,90 @@
+* {
+  border: 0.2px solid transparent;
+  border-radius: 0;
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  font-size: 16px;
+  min-height: 0;
+  background: transparent;
+}
+
+#waybar {
+}
+
+tooltip {
+  background: #11111a;
+}
+
+#workspaces button {
+  padding: 2px 4px;
+  color: #85fa89;
+  background: #222222;
+  margin-left: 0;
+  margin-right: 0;
+  transition-duration: 0.3s;
+}
+
+#workspaces button:hover, #workspaces button.urgent
+#workspaces button.focused, 
+#workspaces button.active {
+  transition-duration: 0.3s;
+  background: #85fa89;
+  color: #222222;
+}
+
+#pulseaudio, #pulseaudio.microphone.source-muted {
+  color: #fa8585;
+  background-color: #222222;
+}
+
+#pulseaudio.microphone, #pulseaudio.muted {
+  background: #fa8585;
+  color: #222222;
+  transition-duration: 0.3s;
+}
+
+#bluetooth, #network {
+  color: #89b4fa;
+  background-color: #222222;
+}
+
+#network.disconnected, #bluetooth.connected {
+  background-color: #89b4fa;
+  color: #222222;
+}
+
+#temperature, #battery {
+  color: #85fa89;
+  background-color: #222222
+}
+
+#temperature.critical, #battery:hover {
+  background-color: #85fa89;
+  color: #222222;
+}
+
+#clock, #custom-weeks {
+  color: #fafa85;
+  background-color: #222222;
+  border-radius: 0;
+  border-right: 0px;
+}
+
+#custom-power_profile,
+#custom-weather,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#bluetooth,
+#temperature,
+#workspaces,
+#tray,
+#backlight,
+#custom-weeks{
+  padding: 0 8px;
+  margin-left: 0;
+  margin-right: 0;
+  transition-duration: 0.3s;
+}

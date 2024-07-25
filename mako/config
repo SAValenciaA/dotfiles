@@ -1,0 +1,46 @@
+sort=-time
+layer=overlay
+background-color=#222222
+width=300
+height=1010
+padding=12
+border-size=2
+border-color=#111111
+border-radius=0
+icons=1
+icon-path=.icon/notify/
+max-icon-size=100
+default-timeout=5000
+ignore-timeout=1
+font=JetBrainsMonoNL Nerd Font Propo
+on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message.oga
+
+[urgency=low]
+on-notify=none
+text-color=#dddddd
+
+[urgency=normal]
+text-color=#70c070
+border-color=#70c070
+
+
+[urgency=high]
+border-size=3
+border-color=#FB5F50
+text-color=#FB5F50
+on-notify=exec mpv -volume=175 /usr/share/sounds/freedesktop/stereo/dialog-error.oga
+
+[category=mpd]
+default-timeout=2000
+group-by=category
+
+[category=headphonesConnected]
+border-color=#89b4fa
+text-color=#89b4fa
+
+[category=points]
+border-color=#c0bc70
+text-color=#c0bc70
+on-notify=exec mpv -volume=175 /usr/share/sounds/freedesktop/stereo/dialog-error.oga
+
+

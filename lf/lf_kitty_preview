@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+file=$1
+w=$2
+h=$3
+x=$4
+y=$5
+
+fileType="$( file -Lb --mime-type "$file")"
+filename=$(basename $(echo "$file" | tr ' ' '_'))
+if [[ $fileType == *"image"* ]]; then
+  kitty +kitten icat --silent --stdin no --transfer-mode file --place "${w}x${h}@${x}x${y}" "$file" < /dev/null > /dev/tty
+  exit 1
+
+elif [[ $fileType == *"pdf"* ]]; then
+  if [[ ! -f "/tmp/$filename.png" ]]; then
+      pdftoppm -f 1 -l 1 "$file" >> "/tmp/$filename.png"
+  fi
+  kitty +kitten icat --silent --stdin no --transfer-mode file --place "${w}x${h}@${x}x${y}" "/tmp/$filename.png" < /dev/null > /dev/tty
+  exit 1 
+
+fi
+
+~/go/bin/pistol "$file"
