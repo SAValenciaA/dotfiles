@@ -1,4 +1,4 @@
-# lf icons
+#!/usr/bin/bash
 export LF_ICONS="\
 tw=:\
 st=:\
