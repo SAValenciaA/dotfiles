@@ -58,9 +58,6 @@ PISTOL=:/home/sergio/go/bin/pistol
 PERSONAL_BIN=:/home/sergio/.bin/
 export PATH="$PATH$BIN$BASHLY$VIT3$AGENDA$PISTOL$PERSONAL_BIN"
 
-# LF ICONS
-source ~/.bash_lf_icons
-
 # NEOVIM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
