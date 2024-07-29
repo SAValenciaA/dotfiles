@@ -7,9 +7,6 @@
 
 # ALIASES
 
-# BECAUSE U STUPID
-alias rm='trash'
-
 #  LS ALIASES
 alias ls='eza'
 alias ll='eza --no-user -l'
@@ -21,6 +18,7 @@ alias lext='eza --no-user -l --sort extension'
 # PACMAN
 alias pacmanSyu='sudo pacman -Syu'
 alias pacmanSs='pacman -Ss'
+alias pacmanQ="pacman -Q"
 
 #  CD ALIASES
 alias ..="cd ../"
@@ -36,14 +34,17 @@ alias frtrans="trans -show-original n -show-translation n -show-languages n -sho
 # SHORT VERSION
 alias n="nvim"
 alias bashrc="nvim ~/.bashrc"
-alias sunvim="sudo nvim"
 alias py="python3 $1"
 
 # RENAMING ALIASES
 alias battery='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
 alias kimg="kitten icat"
 alias copy="waycopy"
+alias run="hyprctl dispatch exec"
+alias remove='/usr/bin/rm'
 
+# BECAUSE U STUPID
+alias rm='trash'
 
 # PROMPT DECORATION
 eval "$(starship init bash)"
