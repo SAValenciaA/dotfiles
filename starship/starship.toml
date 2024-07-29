@@ -32,36 +32,29 @@ truncation_symbol = "…/"
 "~/Scripts" = "  "
 [git_branch]
 symbol = "| "
-style = "bg:#212125"
-format = '[[ $symbol $branch ](fg:#85fa89 bg:#222223)]($style)'
+format = '[[ $symbol $branch ](fg:#85fa89)]($style)'
 
 [git_status]
-style = "bg:#212125"
-format = '[[($all_status$ahead_behind )](fg:#85fa89 bg:#222223)]($style)'
+format = '[[($all_status$ahead_behind )](fg:#85fa89)]($style)'
 
 [nodejs]
 symbol = "| "
-style = "bg:#1e1e2e"
 format = '[[ $symbol ($version) ](fg:#85fa89 bg:#222223)]($style)'
 
 [rust]
 symbol = "| "
-style = "bg:#1f1f2a"
 format = '[[ $symbol ($version) ](fg:#85fa89 bg:#222223)]($style)'
 
 [golang]
 symbol = "| ﳑ"
-style = "bg:#1f1f2a"
 format = '[[ $symbol ($version) ](fg:#85fa89 bg:#222223)]($style)'
 
 [php]
 symbol = "| "
-style = "bg:#1f1f2a"
 format = '[[ $symbol ($version) ](fg:#85fa89 bg:#222223)]($style)'
 
 [time]
 disabled = true
 time_format = "%R" # Hour:Minute Format
-style = "bg:#222223"
 format = '[[  $time ](fg:#85fa89 bg:#222223)]($style)'
 
