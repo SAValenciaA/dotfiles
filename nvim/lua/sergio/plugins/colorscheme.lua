@@ -14,10 +14,10 @@ return {
 		local fg = "#cccccc"
 		local fg_dark = "#85fa89"
 		local fg_gutter = "#405355"
-		-- IDK
-		local fg_sidebar = "#ff0000"
-		-- IDK
-		local border = "#ff0000"
+		-- it is what it says
+		local fg_sidebar = "#85fa89"
+		-- border between windows
+		local border = "#85fa89"
 
 		local warning = "#ed3437"
 		local hint = "#85fa89"
