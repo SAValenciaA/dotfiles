@@ -14,6 +14,7 @@ config_app=(
   waybar
   wofi
   zathura
+  nvim
 )
 
 # dotfiles that dont have their own folder in config
