@@ -98,7 +98,8 @@
         "tooltip-format": "{essid} - {ifname} via {gwaddr}",
         "format-linked": "{ifname} (No IP)",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "IP: {ipaddr}/{cidr}"
+        "format-alt": "  {signalStrength}%",
+        "on-click": "kitty -T floating nmtui"
     },
 
     "bluetooth": {
