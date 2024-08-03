@@ -20,6 +20,15 @@ alias pacmanSyu='sudo pacman -Syu'
 alias pacmanSs='pacman -Ss'
 alias pacmanQ="pacman -Q"
 
+# NVIM
+alias n="nvim"
+alias nbashrc="nvim ~/.bashrc"
+
+# FIND FILES/FOLDERS
+alias pfind='run zathura "$(fd -H --type f .pdf | fzf || echo "--help")"'
+alias cdfind='cd $(fd --type d --hidden --exclude .git . "/home/sergio" | fzf)'
+alias nfind='nvim $(fd --type f --hidden --exclude .git | fzf || echo "--help")'
+
 #  CD ALIASES
 alias ..="cd ../"
 alias ...="cd ../../"
@@ -32,14 +41,12 @@ alias cp='cp -i'
 alias frtrans="trans -show-original n -show-translation n -show-languages n -show-dictionary n -show-prompt-message n fr:en"
 
 # SHORT VERSION
-alias n="nvim"
-alias bashrc="nvim ~/.bashrc"
 alias py="python3 $1"
 
 # RENAMING ALIASES
 alias battery='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
 alias kimg="kitten icat"
-alias copy="waycopy"
+alias copy="wl-copy"
 alias run="hyprctl dispatch exec"
 alias remove='/usr/bin/rm'
 
