@@ -5,7 +5,7 @@ git submodule init
 git submodule update
 
 # dotfiles that have their own folder in config
-config_app=(
+config_with_folder=(
   btop
   hypr
   kitty
@@ -18,43 +18,42 @@ config_app=(
 )
 
 # dotfiles that dont have their own folder in config
-config=(
+config_without_folder=(
   starship
 )
 
 # dotfiles in the home folder
-home=(
+config_home_folder=(
   git
   bash
+  tmux
 )
 
 # run the stow command for the passed in directory ($2) in location $1
 stowit() {
-    usr=$1
-    app=$2
     # -v verbose
     # -R recursive
     # -t target
-    stow -v -R -t ${usr} ${app}
+    stow -v -R -t $@
 }
 
 echo ""
 echo "Stowing apps for user: ${whoami}"
 
-# install apps in the .config directory
-for app in ${config_app[@]}; do
+# install configurations with their own folder in .config
+for app in ${config_with_folder[@]}; do
   mkdir $HOME/.config/$app
   stowit $HOME/.config/$app $app
 done
 
-# install apps in the .config directory
-for app in ${config[@]}; do
+# install configurations without folder in the .config
+for app in ${config_without_folder[@]}; do
   stowit $HOME/.config $app
 done
 
-# install apps in the home directory
-for app in ${home[@]}; do
-  stowit $HOME/ $app/*
+# install configuration in the home folder
+for app in ${config_home_folder[@]}; do
+  stowit $HOME/ $app/
 done
 
 echo ""
