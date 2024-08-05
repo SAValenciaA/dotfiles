@@ -34,6 +34,7 @@ alias ..="cd ../"
 alias ...="cd ../../"
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
+alias z='zoxide'
 
 #  ADDING FLAGS
 alias grep='grep --color=auto'
