@@ -39,22 +39,22 @@ format = '[[($all_status$ahead_behind )](fg:#85fa89)]($style)'
 
 [nodejs]
 symbol = "| "
-format = '[[ $symbol ($version) ](fg:#85fa89 bg:#222223)]($style)'
+format = '[[ $symbol ($version) ](fg:#85fa89)]($style)'
 
 [rust]
 symbol = "| "
-format = '[[ $symbol ($version) ](fg:#85fa89 bg:#222223)]($style)'
+format = '[[ $symbol ($version) ](fg:#85fa89)]($style)'
 
 [golang]
 symbol = "| ﳑ"
-format = '[[ $symbol ($version) ](fg:#85fa89 bg:#222223)]($style)'
+format = '[[ $symbol ($version) ](fg:#85fa89)]($style)'
 
 [php]
 symbol = "| "
-format = '[[ $symbol ($version) ](fg:#85fa89 bg:#222223)]($style)'
+format = '[[ $symbol ($version) ](fg:#85fa89)]($style)'
 
 [time]
 disabled = true
 time_format = "%R" # Hour:Minute Format
-format = '[[  $time ](fg:#85fa89 bg:#222223)]($style)'
+format = '[[  $time ](fg:#85fa89)]($style)'
 
