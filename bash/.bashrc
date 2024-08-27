@@ -49,6 +49,7 @@ alias kimg="kitten icat"
 alias copy="wl-copy"
 alias run="hyprctl dispatch exec"
 alias remove='/usr/bin/rm'
+alias pw='keepassxc-cli'
 
 # BECAUSE U STUPID
 alias rm='trash'
@@ -73,3 +74,10 @@ export NVM_DIR="$HOME/.nvm"
 
 # ZOXIDE
 eval "$(zoxide init bash)"
+
+# Created by `pipx` on 2024-08-20 05:04:56
+export PATH="$PATH:/home/sergio/.local/bin"
+
+# fix Cura
+#export QT_QPA_PLATFORM="xcb"
+
